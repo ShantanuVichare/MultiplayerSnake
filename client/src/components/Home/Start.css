@@ -1,0 +1,90 @@
+
+.buttonGroup {
+
+    text-align:center;
+}
+
+.buttons {
+    /* display: inline-flexbox; */
+    text-align:center;
+    height: 100px;
+    width: 150px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 10px;
+    
+    border: thin solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px ;
+    transition: all 0.25s;
+    font-size: large;
+    font-weight: 300;
+}
+.buttons:hover {
+    /* background-color: #DD8300; */
+    font-size: larger;
+    font-weight: 350;
+    height: 105px;
+    width: 155px;
+    box-shadow: 0px 3px 4px ;
+
+    margin-top: 95px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.buttons:focus {
+    outline: none;
+    background-color: lightgrey;
+    font-size: large;
+}
+
+
+.codeboxGroup {
+    text-align: center;
+}
+.codebox {
+    border-radius: 3px;
+    height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-size: medium;
+
+    border: thin solid lightgrey;
+    background-color: white;
+    box-shadow: 0px 0px 1px ;
+}
+
+.codebox:hover {
+    border: thin solid grey;
+}
+
+.codebox:focus {
+    outline: none;
+}
+
+.submitButton {
+    border-radius: 10px;
+    width: 50px;
+    
+    margin-top: 5px;
+}
+
+.submitButton:hover {
+
+    /* height: 35px; */
+    /* width: 55px; */
+
+    box-shadow: 0px 0px 2px ;
+}
+
+.submitButton:focus {
+    background-color: #DDDDDD;
+}

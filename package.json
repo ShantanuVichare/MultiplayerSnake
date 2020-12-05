@@ -1,0 +1,32 @@
+{
+  "name": "MultiplayerSnake",
+  "version": "1.0.0",
+  "description": "A web based multiplayer game of snake.",
+  "main": "src/app.js",
+  "scripts": {
+    "postinstall": "cd client && npm install",
+    "build": "npm install && (cd client && npm run build)",
+    "start": "node ./src/app.js",
+    "dev": " npm install && concurrently \"cd client && npm run start\" \"nodemon ./src/app.js\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShantanuVichare/MultiplayerSnake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShantanuVichare/MultiplayerSnake/issues"
+  },
+  "homepage": "https://github.com/ShantanuVichare/MultiplayerSnake#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.6"
+  }
+}

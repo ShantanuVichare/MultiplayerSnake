@@ -1,0 +1,65 @@
+
+.playercolorbox {
+    width: 10%;
+    box-shadow: 0px 0px 1px;
+    /* margin-right: 10px; */
+    border-radius: 5px;
+    height: 30%;
+    width: 30%;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* display: inline-block; */
+}
+
+.playerbox {
+    /* display:'inline-flex'; */
+    
+    border-radius: 3px;
+    height: 35px;
+    /* padding: 15px; */
+    /* padding-right: 15px; */
+    width: 70%;
+    
+    margin-top: 3%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: thin solid lightgrey;
+    background-color: white;
+    box-shadow: 0px 0px 1px ;
+
+}
+
+.playernamebox {
+    width: 70%;
+    text-align: left;
+    padding: 8px;
+    padding-left: 15px;
+    /* display:'inline-block' */
+    /* background-color: blue; */
+}
+
+
+/* .namebox:hover {
+    border: thin solid grey;
+}
+
+.namebox:focus {
+    outline: none;
+} */
+
+.example-enter {
+    opacity: 0;
+  }
+  .example-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .example-exit {
+    opacity: 1;
+  }
+  .example-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }

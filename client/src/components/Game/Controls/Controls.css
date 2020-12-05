@@ -1,0 +1,112 @@
+#arrowAnim {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+
+    border: none;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-color: black transparent transparent black;
+    transform: rotate(-45deg);
+}
+
+.arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 3s linear infinite;
+    animation: slide 3s linear infinite;
+}
+
+#arrowAnim:hover .arrow {
+    border-color: blue transparent transparent blue;
+    width: 25px;
+    height: 25px;
+}
+
+#arrowAnim:hover {
+    height: 45px;
+    width: 45px;
+}
+
+#arrowAnim:focus {
+    outline: none;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+}
+.delay2 {
+    -webkit-animation-delay: 2s; 
+      animation-delay: 2s;
+}
+.delay3 {
+    -webkit-animation-delay: 3s; 
+      animation-delay: 3s;
+}
+  
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateX(100%) scale(0.5);}	
+   50% { opacity:1; transform: translateX(50%) scale(1.0);}	
+  100% { opacity:0; transform: translateX(0%) scale(1.5);}		
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateX(100%) scale(0.5);}	
+   50% { opacity:1; transform: translateX(50%) scale(1.0);}	
+  100% { opacity:0; transform: translateX(0%) scale(1.5);}	
+}
+
+.cell {
+    border-style: none;
+    padding: 10px;
+}
+
+.base {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: none;
+
+    margin: 50px;
+}
+
+.base-left {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.base-up {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.base-right {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.base-down {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+
+.arrow-old {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 33px;
+    margin: 5px;
+}
+
+.cell:hover .arrow-old {
+    border: solid blue;
+    border-width: 0 3px 3px 0;
+}
